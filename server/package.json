@@ -1,0 +1,25 @@
+{
+  "name": "makawhy",
+  "version": "1.0.0",
+  "description": "a service to send survey to clients",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "react",
+    "express",
+    "and",
+    "mongodb"
+  ],
+  "author": "akintola olalekan",
+  "license": "MIT",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/akinlekan28/makawhy.git"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
