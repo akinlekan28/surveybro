@@ -1,0 +1,33 @@
+{
+  "name": "makawhy",
+  "version": "1.0.0",
+  "description": "a service to send survey to clients",
+  "main": "index.js",
+  "engines": {
+    "node": "8.9.3",
+    "npm": "5.5.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm run start --prefix client"
+  },
+  "keywords": [
+    "nodejs",
+    "react",
+    "express",
+    "and",
+    "mongodb"
+  ],
+  "author": "akintola olalekan",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.1",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
+  }
+}
