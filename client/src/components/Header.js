@@ -9,17 +9,15 @@ class Header extends Component {
     return (
       <nav>
         <div className="nav-wrapper">
-          <Link to={this.props.auth ? '/surveys' : '/'} className="brand-logo">SurveyBro</Link>
-          <a href="#" data-activates="mobile-demo" className="button-collapse"><i className="material-icons">-</i></a>
+          <Link to={this.props.auth ? '/surveys' : '/'} className="brand-logo left" style={{fontSize: '17px'}}>SurveyBro</Link>
           {this.props.auth ?
-            <ul className="right hide-on-med-and-down">
+            <ul className="right">
               <li><Stripe /></li>
               <li style={{margin: '0 10px'}}><a>Credits: {this.props.auth.credits}</a></li>
               <li><a href="/api/logout">Logout</a></li>
             </ul>
             :
-            <ul className="right hide-on-med-and-down">
-              <li><Link to="/signup">Sign Up</Link></li>
+            <ul className="right">
               <li><a href="/auth/google">Login with google</a></li>
             </ul>
           }
