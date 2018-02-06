@@ -22,6 +22,7 @@ class SurveyList extends Component {
           <div className="card-action">
            <a>Yes : {survey.yes} </a>
             <a>No : {survey.no} </a>
+            <a className="btn right" style={{marginBottom: '20px'}}>Delete</a>
           </div>
         </div>
       )

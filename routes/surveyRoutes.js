@@ -54,6 +54,13 @@ module.exports = app => {
     res.send({});
   })
 
+  app.delete('/api/surveys/:surveyId', requiresLogin, async (req, res) => {
+    const surveys = await Survey.delete({
+      _id: surveyId
+    })
+    res.send(surveys);
+  })
+
   app.post('/api/surveys', requiresLogin, minimumCredits, async (req, res) => {
 
     const { title, subject, body, recipients } = req.body;
